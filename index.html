@@ -14,12 +14,45 @@
     
     <body>
         
-  
-<svg width="400" height="300">
-        </svg>
+  <svg width="600" height="500">
+ 
+         <line x1="400" y1="45" x2="600" y2="45" stroke="black" strokewidth="2"></line>
+      <line x1="400" y1="75" x2="600" y2="75" stroke="black" strokewidth="2"></line>
+      <line x1="400" y1="105" x2="600" y2="105" stroke="black" strokewidth="2"></line>
+      <line x1="400" y1="135" x2="600" y2="135" stroke="black" strokewidth="2"></line>
+      <line x1="400" y1="165" x2="600" y2="165" stroke="black" strokewidth="2"></line>
+      
+      <text x="500" y="195" fontsize="12" fontfamily="arial">
+      A
+      </text>
         
-            <script>
-for(var i=0; i<20; i++){
+        
+        </svg>      
+       
+
+      
+<script>
+    d3.select("svg")
+
+.append("circle")
+
+.attr("cx", 500)
+
+.attr("cy", 120)
+
+.attr("r", 15);
+    
+
+    d3.select("svg")
+.append("rect")
+.attr("x",510)
+.attr("y",45)
+.attr("width",5)
+.attr("height",78);
+
+    
+    
+    for(var i=0; i<20; i++){
   var thisNum = random(20,300);
   d3.select("svg")
     .append("rect")
@@ -41,10 +74,17 @@ for(var i=0; i<20; i++){
 function random(n,m){
   return Math.ceil(Math.random()*(m-n)+n);
 }    
-        
-          
+
+    
+    
+    
+    
+ 
         </script>
+        
+
     </body>
-</html>
+    
 
-
+        
+  
